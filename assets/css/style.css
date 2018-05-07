@@ -128,11 +128,13 @@ hr {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background-color: gray;
     height: 90px;
     border-top: 10px solid #4aaaa5;
-    margin-top: 145px;
+    margin-top: 350px;
     text-align: center;
 }
 
@@ -144,7 +146,7 @@ footer p {
 
 /*INDEX STYLES: */
 
-.about-content {
+.content {
     padding: 30px;
 }
 
@@ -154,11 +156,38 @@ footer p {
     margin: 5px 25px 15px 0;
 }
 
-.about-content p {
+.content p {
     font-size: 1.6em;
     line-height: 2;
 }
 
+/*CONTACT STYLES: */
+
+label {
+    display: block;
+    font-size: 1.6em;
+    padding: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    color: #cccccc;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+#submit {
+    font-size: 1.8em;
+    width: 115px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 0;
+}
 
 
 
