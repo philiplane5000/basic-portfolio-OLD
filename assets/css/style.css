@@ -24,7 +24,7 @@ body {
     color: #777777;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .port-lg-container {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -43,7 +43,7 @@ h1, h2, h3 {
     position: absolute;
     left: 220px;
     display: inline-block;
-    height: 90px;
+    height: 87.5px;
     width: 290px;
     background-color: #4aaaa5;
 }
@@ -105,9 +105,7 @@ nav a:active {
     border-bottom: 2px solid #84F6F1;
 }
 
-/* nav a:visited {
-    color: #AA6B4A;
-}  */
+/* nav a:visited {color: #AA6B4A;}  */
 
 /*END NAVIGATION */
 
@@ -128,13 +126,11 @@ hr {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: gray;
     height: 90px;
     border-top: 10px solid #4aaaa5;
-    margin-top: 350px;
+    margin-top: 275px;
     text-align: center;
 }
 
@@ -193,11 +189,45 @@ textarea {
 
 /*PORTFOLIO STYLES: */
 
-.portfolio img {
-    display: inline-block;
+.port-lg-container {
+    width: 585px;
+    color: #ffffff;
+}
+
+.img-container {
+    position: relative;
     width: 275px;
     height: 205px;
+    margin: 25px 0;
+    display: inline-block;
 }
+
+.img-container:nth-child(odd){
+    margin-right: 30px;
+}
+
+.port-lg-container img {
+    width: 100%;
+}
+
+#img-overlay {
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color:#4aaaa5;
+}
+
+#img-overlay a {
+    position: relative;
+    top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    font-size: 18px;
+}
+
 
 
 
