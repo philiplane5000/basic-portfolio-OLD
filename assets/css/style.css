@@ -162,6 +162,7 @@ footer p {
 }
 
 /*CONTACT STYLES: */
+/*need to adjust margins and paddings here: */
 
 label {
     display: block;
@@ -174,11 +175,12 @@ input, textarea {
     color: #cccccc;
     border: 1px solid #cccccc;
     padding: 5px;
-    margin: 5px;
+    margin-bottom: 10px;
 }
 
 textarea {
-    height: 120px;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 #submit {
@@ -188,6 +190,10 @@ textarea {
     color: #ffffff;
     padding: 10px 0;
 }
+
+/*PORTFOLIO STYLES: */
+
+
 
 
 
