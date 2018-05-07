@@ -193,6 +193,11 @@ textarea {
 
 /*PORTFOLIO STYLES: */
 
+.portfolio img {
+    display: inline-block;
+    width: 275px;
+    height: 205px;
+}
 
 
 
