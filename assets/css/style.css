@@ -1,3 +1,13 @@
+/* COLORS:
+* Teal color (used for headings and backgrounds): `#4aaaa5`
+* Regular font color (used for paragraphs and all text besides the headings): `#777777`
+* Main header background color: `#ffffff`
+* Main header border color: `#cccccc`
+* Footer background color: `#666666`
+* Main content background color: `#ffffff`
+* Main content border color: `#dddddd` */
+
+/*SITE-WIDE STYLES: */
 
 * {
     box-sizing: border-box;
@@ -9,116 +19,144 @@ html {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url('../images/light-grey-terrazzo.png');
-    min-width: 1250px;
+    color: #777777;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 .head {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    display: inline-block;
-    background-color: white;
+    display: block;
+    background-color: #ffffff;
+    border-bottom: 2.5px solid #cccccc;
     width: 100%;
     min-width: 960px;
-    height: 85px;
+    height: 90px;
     padding: 0;
     margin: 0;
 }
 
 .name {
-    float: left;
-    display: block;
-    height: 85px;
-    background-color: teal;
-    width: 250px;
-    margin-left: 150px;
+    position: absolute;
+    left: 220px;
+    display: inline-block;
+    height: 90px;
+    width: 290px;
+    background-color: #4aaaa5;
 }
 
 h1 {
-    color: whitesmoke;
+    color: #ffffff;
     font-size: 2.8em;
     text-align: center;
-    padding-top: 25px;
-}
-
-.nav {
-    float: left;
-    display: block;
-    width: 225px;
-    /* border: 2px dashed peachpuff; */
-    height: 85px;
-    margin-left: 480px;
-}
-
-.nav ul li {
-    color: teal;
-    display: inline-block;
-    font-size: 1.8em;
-    padding: 5px;
-    text-align: center;
-    margin-top: 25px;
-    /* margin-left: 10px; */
-}
-
-.nav a {
-    color: grey;
-    text-decoration: none;
-
-}
-
-.nav a:hover {
-    color: teal;
-    text-decoration: none;
-    border-bottom: 2px solid teal;
-    
-}
-
-main {
-    margin: 0 auto;
-    margin-top: 45px;
-    width: 960px;
-    background-color: white;
-    border: 1px solid lightgrey
-}
-
-.about-content{
-    margin: 0 25px 0 25px;
-}
-
-#profilePic {
-    float: left;
-    width: 140px;
-    margin: 25px 20px 10px 10px;
+    padding-top: 30px;
+    font-weight: 600;
 }
 
 h2 {
-    color: teal;
-    font-size: 2.8em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 2;
+    color: #4aaaa5;
+    font-size: 3em;
+    font-weight: 600;
 }
 
-.about-content p {
-    font-size: 1.8em;
-    color: gray;
-    padding: 20px;
-    line-height: 1.5;
+/*NAVIGATION */
+
+nav {
+    position: absolute;
+    left: 950px;
+    display: inline-block;
+    width: 250px;
+    height: 85px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.6em;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    margin-top: 35px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+nav a {
+    color: #777777;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    color: #4aaaa5;
+    text-decoration: none;
+    border-bottom: 1.5px solid #4aaaa5;
+}
+
+nav a:active {
+    color: #84F6F1;
+    border-bottom: 2px solid #84F6F1;
+}
+
+/* nav a:visited {
+    color: #AA6B4A;
+}  */
+
+/*END NAVIGATION */
+
+main {
+    position: relative;
+    left: 220px; 
+    margin-top: 45px;
+    width: 960px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+hr {
+    height: 2.5px;
+    border: 0.5px solid #dddddd;
+    background-color: #dddddd;
+    margin: 25px 0;
 }
 
 footer {
     width: 100%;
     background-color: gray;
-    height: 125px;
-    border-top: 10px solid teal;
+    height: 90px;
+    border-top: 10px solid #4aaaa5;
     margin-top: 145px;
     text-align: center;
 }
 
 footer p {
-    padding-top: 85px;
+    padding-top: 55px;
     font-size: 1.4em;
-    color: whitesmoke;
+    color: #ffffff;
+}
+
+/*INDEX STYLES: */
+
+.about-content {
+    padding: 30px;
+}
+
+#profilePic {
+    float: left;
+    width: 140px;
+    margin: 5px 25px 15px 0;
+}
+
+.about-content p {
+    font-size: 1.6em;
+    line-height: 2;
 }
 
 
