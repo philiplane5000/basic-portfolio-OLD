@@ -79,7 +79,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     font-size: 1.6em;
-    font-weight: 600;
+    font-weight: 500;
     padding: 0 10px 0 10px;
     text-align: center;
     margin-top: 35px;
@@ -195,8 +195,7 @@ textarea {
 /*PORTFOLIO STYLES: (CHANGED TO FLEX) */
 
 .row {
-    position: flex;
-    /* text-align: center; */
+    width: 585px;
 }
 
 .row:first-of-type {
