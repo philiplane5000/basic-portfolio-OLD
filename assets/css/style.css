@@ -223,7 +223,8 @@ textarea {
     width: 100%;
     height: 60px;
     text-align: center;
-    background-color:#4aaaa5;
+    background-color:#4aaaa5; /*SWITCH TO RGBA + ADD OPACITY*/
+    opacity: 0.925;
     z-index: 100;
 }
 
