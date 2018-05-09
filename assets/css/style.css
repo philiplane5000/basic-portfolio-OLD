@@ -14,7 +14,6 @@
 }
 
 html {
-    background-image: url('../images/light-grey-terrazzo.png');
     font-size: 10px;
 }
 
@@ -80,6 +79,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     font-size: 1.6em;
+    font-weight: 600;
     padding: 0 10px 0 10px;
     text-align: center;
     margin-top: 35px;
@@ -173,6 +173,10 @@ input, textarea {
     border: 1px solid #cccccc;
     padding: 5px;
     margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 15px;
 }
 
 textarea {
