@@ -28,22 +28,21 @@ h1, h2, h3, .port-lg-container {
 }
 
 .head {
-    display: block;
+    display: flex;
     background-color: #ffffff;
     border-bottom: 2.5px solid #cccccc;
     width: 100%;
     min-width: 960px;
     height: 90px;
-    padding: 0;
-    margin: 0;
 }
 
 .name {
-    position: absolute;
-    left: 220px;
+    /* position: relative; */
+    margin-left: 220px;
     display: inline-block;
     height: 87.5px;
     width: 290px;
+    min-width: 260px;
     background-color: #4aaaa5;
 }
 
@@ -64,26 +63,25 @@ h2 {
 /*NAVIGATION */
 
 nav {
-    position: absolute;
-    left: 950px;
-    display: inline-block;
+    margin-left: 450px;
     width: 250px;
-    height: 85px;
+    height: 75px;
     background-color: #ffffff;
 }
 
 nav ul {
-    text-align: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline-block;
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-weight: 500;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     text-align: center;
-    margin-top: 35px;
     border-right: 1px solid rgba(0,0,0,0.1);
+    /* transform: rotateX(45deg); */
 }
 
 nav ul li:last-child {
@@ -96,9 +94,8 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-    color: #4aaaa5;
+    color: #59d8d2;
     text-decoration: none;
-    border-bottom: 1.5px solid #4aaaa5;
 }
 
 nav a:active {
@@ -111,9 +108,14 @@ nav a:active {
 /*END NAVIGATION */
 
 main {
-    position: relative;
-    left: 220px; 
-    margin-top: 45px;
+    width: 100%;
+    min-height: 725px;
+}
+
+.content {
+    margin-top: 35px;
+    margin-left: 220px;
+    padding: 30px;
     width: 960px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
@@ -127,11 +129,11 @@ hr {
 }
 
 footer {
+    margin-top: 50px;
     width: 100%;
     background-color: gray;
     height: 90px;
     border-top: 10px solid #4aaaa5;
-    margin-top: 275px;
     text-align: center;
 }
 
@@ -142,10 +144,6 @@ footer p {
 }
 
 /*INDEX STYLES: */
-
-.content {
-    padding: 30px;
-}
 
 #profilePic {
     float: left;
@@ -159,7 +157,6 @@ footer p {
 }
 
 /*CONTACT STYLES: */
-/*need to adjust margins and paddings here: */
 
 label {
     display: block;
@@ -192,7 +189,7 @@ textarea {
     padding: 10px 0;
 }
 
-/*PORTFOLIO STYLES: (CHANGED TO FLEX) */
+/*PORTFOLIO STYLES: */
 
 .row {
     width: 585px;
@@ -211,7 +208,6 @@ textarea {
 }
 
 .img-container {
-    flex: 1;
     height: 205px;
     display: inline-block;
     margin-right: 30px;
@@ -222,7 +218,6 @@ textarea {
 }
 
 #img-overlay {
-    flex: 1;
     position: relative;
     top: 150px;
     width: 100%;
