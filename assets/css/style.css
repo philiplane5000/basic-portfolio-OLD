@@ -56,6 +56,7 @@ h1 {
 
 h2 {
     color: #4aaaa5;
+    padding: 7.5px 0;
     font-size: 3em;
     font-weight: 600;
 }
@@ -113,7 +114,7 @@ main {
 }
 
 .content {
-    margin-top: 35px;
+    margin-top: 40px;
     margin-left: 220px;
     padding: 30px;
     width: 960px;
@@ -138,7 +139,7 @@ footer {
 }
 
 footer p {
-    padding-top: 55px;
+    padding-top: 50px;
     font-size: 1.4em;
     color: #ffffff;
 }
@@ -147,13 +148,14 @@ footer p {
 
 #profilePic {
     float: left;
-    width: 140px;
-    margin: 5px 25px 15px 0;
+    margin: 10px 25px 25px 0;
+    border-collapse: separate;
 }
 
 .content p {
     font-size: 1.6em;
     line-height: 2;
+    border-collapse: separate;
 }
 
 /*CONTACT STYLES: */
@@ -192,45 +194,37 @@ textarea {
 /*PORTFOLIO STYLES: */
 
 .row {
-    width: 585px;
+    display: flex;
+    justify-content: space-between;
+    width: 590px;
 }
 
 .row:first-of-type {
-    margin-top: -40px;
+    margin-top: -42.5px;
 }
 
 .row:last-of-type {
     margin-bottom: 30px;
 }
 
-.img-container img {
-    width: 250px;
-}
-
-.img-container {
+.gal-img {
     height: 205px;
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.img-container:nth-child(even){
-    margin-right: none;
 }
 
 #img-overlay {
+    display: flex;
+    flex: 1;
     position: relative;
-    top: 150px;
-    width: 100%;
-    height: 60px;
+    top: 185px;
+    height: 70px;
     text-align: center;
-    background-color:#4aaaa5; /*SWITCH TO RGBA + ADD OPACITY*/
-    opacity: 0.925;
+    background-color:rgba(74, 170, 165, 0.85);
     z-index: 100;
 }
 
 #img-overlay a {
-    position: relative;
-    top: 20px;
+    flex: 1;
+    padding-top: 22.5px;
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
