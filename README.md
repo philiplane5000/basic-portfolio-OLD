@@ -5,4 +5,4 @@ A first step toward building my web development brand
 
 * CLEAN-UP CSS
 * review how-to readme link sent by Leeland
- * Be sure to [validate your html](https://validator.w3.org/#validate_by_input).
+* Bootstrap arrow icon for gallery links(?)

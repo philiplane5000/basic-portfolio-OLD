@@ -1,12 +1,3 @@
-/* COLORS:
-* Teal color (used for headings and backgrounds): `#4aaaa5`
-* Regular font color (used for paragraphs and all text besides the headings): `#777777`
-* Main header background color: `#ffffff`
-* Main header border color: `#cccccc`
-* Footer background color: `#666666`
-* Main content background color: `#ffffff`
-* Main content border color: `#dddddd` */
-
 /*SITE-WIDE STYLES: */
 
 * {
@@ -23,10 +14,6 @@ body {
     color: #777777;
 }
 
-h1, h2, h3 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
 header {
     width: 100%;
     min-width: 1000px;
@@ -34,6 +21,12 @@ header {
     margin-bottom: 40px;
     background-color: #ffffff;
     border-bottom: 2.5px solid #cccccc;
+}
+
+main {
+    width: 100%;
+    min-width: 1000px;
+    display: flex;
 }
 
 .head-content {
@@ -44,11 +37,30 @@ header {
     height: 90px;
 }
 
+.main-content {
+    margin: auto;
+    padding: 30px;
+    width: 960px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
 .name {
     display: flex;
     height: 88.5px;
     width: 290px;
     background-color: #4aaaa5;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+hr {
+    height: 2.5px;
+    border: 0.5px solid #dddddd;
+    background-color: #dddddd;
+    margin: 25px 0;
 }
 
 h1 {
@@ -84,7 +96,6 @@ nav ul li {
     display: flex;
     width: 125px;
     font-size: 1.8em;
-    font-weight: 500;
     border-right: 1px solid rgba(0,0,0,0.15);
 }
 
@@ -115,31 +126,7 @@ nav a:active {
     color: #d87093;
 }
 
-/* nav a:visited {color: #AA6B4A;}  */
-
-/*END NAVBAR*/
-
-main {
-    width: 100%;
-    min-width: 1000px;
-    /* min-height: calc(100vh - 70px); */
-    display: flex;
-}
-
-.content {
-    margin: auto;
-    padding: 30px;
-    width: 960px;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-}
-
-hr {
-    height: 2.5px;
-    border: 0.5px solid #dddddd;
-    background-color: #dddddd;
-    margin: 25px 0;
-}
+/*FOOTER: */
 
 .foot {
     display: flex;
@@ -157,22 +144,64 @@ hr {
     color: #ffffff;
 }
 
-.margin-top {
+.margin-top { /* responsive using jquery */
     margin-top: 75px;
 }
 
-/*HOME PAGE: */
+/*ABOUT-ME PAGE: */
 
 #profilePic {
     float: left;
-    margin: 10px 25px 25px 0;
+    margin: 10px 25px 35px 0;
 }
 
-.content p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 1.5em;
+.main-content p {
+    font-size: 1.6em;
     line-height: 2;
-    text-justify: distribute;
+}
+
+/*GALLERY PAGE: */
+
+.gal-container {
+    margin: -45px 0 35px 0;
+    display: flex;
+    max-width: 620px;
+    flex-wrap: wrap;
+}
+
+.gal-img {
+    height: 210px;
+    margin-right: 35px;
+    width: 275px;
+
+}
+
+.img-overlay {
+    display: flex;
+    flex: 1;
+    width: 275px;
+    position: relative;
+    top: 185px;
+    text-align: center;
+    background-color:rgb(74, 170, 165);
+    opacity: 0.75;
+    z-index: 1;
+    transition: opacity 0.75s;
+}
+
+.pop-effect { /*jquery toggled feature*/
+    opacity: 1;
+    transition: all 0.75s;
+    transform: scale(1.0175);
+    border-radius: 5px;
+}
+
+.img-overlay a {
+    margin: auto;
+    line-height: 60px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /*CONTACT PAGE: */
@@ -185,6 +214,7 @@ label {
 .form-control {
     font-size: 1.4em;
 }
+
 input, textarea {
     font-size: 22px;
     width: 100%;
@@ -212,53 +242,7 @@ textarea {
     border: none;
 }
 
-/*GALLERY STYLES: */
-
-.gal-container {
-    margin: -45px 0 35px 0;
-    display: flex;
-    max-width: 620px;
-    flex-wrap: wrap;
-
-}
-
-.gal-img {
-    height: 210px;
-    margin-right: 35px;
-    width: 275px;
-
-}
-
-.img-overlay {
-    display: flex;
-    flex: 1;
-    width: 275px;
-    position: relative;
-    top: 185px;
-    text-align: center;
-    background-color:rgb(74, 170, 165);
-    opacity: 0.75;
-    z-index: 100;
-    transition: opacity 0.75s;
-}
-
-.pop-effect {
-    opacity: 1;
-    transition: all 0.75s;
-    /* transition-property: all;
-    transition-duration: .75s; */
-    transform: scale(1.0175);
-    border-radius: 5px;
-
-}
-
-.img-overlay a {
-    flex: 1;
-    line-height: 70px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-}
+/*END*/
 
 
 
