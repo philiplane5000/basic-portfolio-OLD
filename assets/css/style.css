@@ -96,16 +96,19 @@ nav a {
     margin: auto;
     color: #777777;
     text-decoration: none;
+    -webkit-transition: all 0.35s;
+    -ms-transition: all 0.35s;
     transition: all 0.35s;
 }
 
 nav a:hover, nav a:focus {
-    letter-spacing: 1.125px;
+    letter-spacing: 1.0125px;
     font-size: 1.025em;
-    color: #59d8d2;
+    color: #d87093;
     text-decoration: none;
-    transition: all;
-    transition-duration: 1s;
+    -webkit-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    transition: all 1s;
 }
 
 nav a:active {
@@ -166,8 +169,10 @@ hr {
 }
 
 .content p {
-    font-size: 1.6em;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.5em;
     line-height: 2;
+    text-justify: distribute;
 }
 
 /*CONTACT PAGE: */
