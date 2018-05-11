@@ -29,6 +29,7 @@ h1, h2, h3 {
 
 header {
     width: 100%;
+    min-width: 1000px;
     display: flex;
     margin-bottom: 40px;
     background-color: #ffffff;
@@ -44,17 +45,17 @@ header {
 }
 
 .name {
-    height: 87.5px;
+    display: flex;
+    height: 88.5px;
     width: 290px;
-    min-width: 260px;
     background-color: #4aaaa5;
 }
 
 h1 {
     color: #ffffff;
     font-size: 2.8em;
-    text-align: center;
-    padding-top: 30px;
+    margin: auto;
+    line-height: 100%;
     font-weight: 600;
 }
 
@@ -108,8 +109,7 @@ nav a:hover, nav a:focus {
 }
 
 nav a:active {
-    color: #84F6F1;
-    border-bottom: 2px solid #84F6F1;
+    color: #d87093;
 }
 
 /* nav a:visited {color: #AA6B4A;}  */
@@ -118,17 +118,15 @@ nav a:active {
 
 main {
     width: 100%;
-    min-width: 980px;
+    min-width: 1000px;
+    /* min-height: calc(100vh - 70px); */
     display: flex;
 }
 
 .content {
-    /* margin-top: 40px;
-    margin-left: 220px; */
     margin: auto;
     padding: 30px;
     width: 960px;
-    min-width: 540px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
 }
@@ -140,8 +138,8 @@ hr {
     margin: 25px 0;
 }
 
-footer {
-    margin-top: 50px;
+.foot {
+    display: flex;
     width: 100%;
     background-color: gray;
     height: 90px;
@@ -149,10 +147,15 @@ footer {
     text-align: center;
 }
 
-footer p {
-    padding-top: 50px;
+.foot p {
+    margin: auto;
+    line-height: 100%;
     font-size: 1.4em;
     color: #ffffff;
+}
+
+.margin-top {
+    margin-top: 75px;
 }
 
 /*HOME PAGE: */
