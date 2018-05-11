@@ -1,8 +1,19 @@
-# Basic-Portfolio
-A first step toward building my web development brand
+# BASIC-PORTFOLIO
+
+* Assignment-01
+* A first step toward building my web development brand.
+
+# BUILT WITH:
+
+* HTML
+* CSS
+* BOOTSTRAP
+* JQUERY
 
 # NOTES:
 
-* CLEAN-UP CSS
-* review how-to readme link sent by Leeland
-* Bootstrap arrow icon for gallery links(?)
+* Proudest accomplishment: 'STICKY' FOOTER using JQUERY
+
+# ACKNOWLEDGEMENTS:
+
+* https://j.eremy.net/set-element-height-to-viewport/ (STARTING POINT FOR FOOTER)

@@ -1,5 +1,7 @@
 console.log('CONNECTED TO SCRIPT');
 
+//GALLERY POP EFFECT:
+
 $('.img-overlay').on('mouseover', function(){
     this.classList.add('pop-effect');
 });
@@ -8,8 +10,7 @@ $('.img-overlay').on('mouseout', function(){
     this.classList.remove('pop-effect');
 });
 
-//FOOTER: (BORROWED, BUT TINKERED WITH!)
-//STARTING POINT: https://j.eremy.net/set-element-height-to-viewport/
+//FOOTER:
 
 $(document).ready(function() {
     function setFoot() {
