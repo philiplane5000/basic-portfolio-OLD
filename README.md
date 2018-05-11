@@ -1,6 +1,7 @@
 # BASIC-PORTFOLIO
 * Assignment-01
 * A first step toward building my web development brand.
+* https://philiptd5000.github.io/Basic-Portfolio/ 
 
 # BUILT WITH:
 * HTML
