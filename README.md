@@ -1,3 +1,7 @@
+### NOT CURRENT - <a href="https://github.com/philiptd5000/my-portfolio">CLICK HERE</a> FOR UPDATED PORTFOLIO PAGE //
+
+<hr>
+
 # BASIC-PORTFOLIO
 * Assignment-01
 * A first step toward building my web development brand.
